@@ -19,13 +19,13 @@ xDict = {
 
 # %%
 # access all the keys of a dictionary using 'keys' function
-xKeys = list(xDict.keys())
+xKeys = xDict.keys()
 print('The keys of dictionary are ...')
-print(xKeys)
+print(list(xKeys))
 
 # %%
 # access all the values of a dictionary using 'values' function
-xVals = list(xDict.values())
+xVals = xDict.values()
 print('The values of dictionary are ...')
 print(xVals)
 
@@ -41,7 +41,5 @@ xDict['location'] = 'Mumbai'
 # %%
 # accessing dictionary values
 outputStatement = 'The person name is {0} {1}.\nHe lives at {2}, his hobbies are {3}.\nHe knows {4}'\
-.format(xDict['firstName'], xDict['lastname'], xDict['location'],
-        ', '.join(xDict['hobbies']), ', '.join(xDict['metaData']['languages']))
+.format(xDict['firstName'], xDict['lastname'], xDict['location'], ', '.join(xDict['hobbies']), ', '.join(xDict['metaData']['languages']))
 print(outputStatement)
-print("rohit checkpoint5")

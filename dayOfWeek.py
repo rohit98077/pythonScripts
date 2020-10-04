@@ -32,7 +32,6 @@ def dayOfWeek(dateStr):
 	0:'Sunday',
 	}[day]
 
-
 date=input('Enter date as dd/mm/yyyy :')
 while date:
 	print(dayOfWeek(date))
